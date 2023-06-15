@@ -581,3 +581,9 @@ body {
 .reviews__h4_orange {
     color: var(--accent-color); 
 }
+
+@media screen and (max-width: 1280px) {
+    .reviews_item_greybox {
+        height: 100%;
+    }
+}
