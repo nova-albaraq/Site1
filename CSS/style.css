@@ -564,8 +564,7 @@ body {
 
 .reviews_item_greybox {
     padding: 0 30px 38px;
-    max-width: 350px;
-    min-height: 318px;
+    max-width: 350px;    
     background-color: #F7F7F7;
     margin-bottom: 30px;
 }
@@ -582,8 +581,4 @@ body {
     color: var(--accent-color); 
 }
 
-@media screen and (max-width: 1280px) {
-    .reviews_item_greybox {
-        height: 100%;
-    }
-}
+
