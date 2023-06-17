@@ -476,33 +476,6 @@ body {
     max-width: 730px;
 }
 
-.question_h3.open::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../IMG/Polygon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 15px;
-    transform: rotate(-90deg); 
-}
-
-.question_h3.close::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../IMG/Polygon.jpg);
-    background-repeat: no-repeat; 
-    background-position: center;
-    margin-right: 15px;
-}
-
-.question_h3.close + .question_p {
-    display: none;
-}
-
 @media screen and (max-width: 1280px) {
     .question {
         padding: 150px 15px 110px ;
