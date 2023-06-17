@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
 }
 
-:root {                       
+:root {
     --accent-color: #F7654A;
     --dark-color: #404149;
     --gray-color: #999999;
@@ -48,10 +48,11 @@ body {
     font-style: 24px;
 }
 
-.text-h4 {  
+.text-h4 {
     font-family: 'Oswald', sans-serif;  
     font-weight: 500;
     font-style: 21px;
+    letter-spacing: 0.02em;
 }
 
 .text-p {
@@ -73,6 +74,8 @@ body {
 }
 
 .header__title {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 20px;
     margin-bottom: 112px;
     display: flex;
@@ -98,7 +101,6 @@ body {
     align-items: center;
 }
 
-
 .burger__line {
     display: block;
     width: 21px;
@@ -123,6 +125,12 @@ body {
     color: var(--white-color);
 }
 
+@media screen and (max-width: 380px) {
+    .h1 {
+        font-size: 46px;
+        line-height: 64px;
+    }    
+} 
 
 .h4 {
     font-weight: 400;
@@ -199,6 +207,7 @@ body {
 @media screen and (max-width: 768px) {
     .info {
         position: relative;
+        padding: 30px 0;
     }
 
     .about__grid {
@@ -206,7 +215,6 @@ body {
         grid-template-rows: repeat(4, 1fr);        
     }
 }
-
 
 .project-h2 {
     text-align: center;
@@ -250,6 +258,7 @@ body {
     .about {
         padding: 450px 15px 110px 15px;
     }
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -259,7 +268,7 @@ body {
     }
 
     .about__flex {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
 
@@ -269,7 +278,7 @@ body {
     }
    
     .about__flex-item:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 } 
 
@@ -278,15 +287,17 @@ body {
     padding-top: 30px;
     padding-bottom: 45px;
 }
-
 .request__flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 
 .request__flex-left {
     color: var(--white-color);
+}
+
+.request__flex-right {
 }
 
 .request__h4 {
@@ -299,7 +310,6 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-
 .request__h5 {
     font-weight: 700;
     font-size: 24px;
@@ -344,7 +354,8 @@ body {
     .request__h5 {
         text-align: left;
     }
-}
+} 
+
 
 .services {
     padding: 150px 0;
@@ -403,17 +414,23 @@ body {
 
 @media screen and (max-width: 768px) {
     .services__grid {
-        grid-template-columns: repeat(1, 1fr);  
+        grid-template-columns: repeat(1, 1fr);
     }
 } 
 
-.portfolio__grid {  
+
+.portfolio {
+}
+.portfolio__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     gap: 0px;
 }
+.portfolio__grid-item {}
+
+.portfolio__img {}
 
 @media screen and (max-width: 1280px) {
     .portfolio__grid {  
@@ -431,6 +448,10 @@ body {
 .question {
     padding-top: 150px;
     padding-bottom: 110px;
+}
+
+.question__h2 {
+    text-align: center;
 }
 
 .question .question__h2 {
@@ -455,21 +476,21 @@ body {
     max-width: 730px;
 }
 
-.question_h3.open::before { 
+.question_h3.open::before {
     content: "";
     display: inline-block;
     width: 15px;
     height: 15px;
     background-image: url(../IMG/Polygon.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     margin-right: 15px;
     transform: rotate(-90deg); 
 }
 
-.question_h3.close::before { 
+.question_h3.close::before {
     content: "";
-    display: inline-block; 
+    display: inline-block;
     width: 15px;
     height: 15px;
     background-image: url(../IMG/Polygon.jpg);
@@ -503,13 +524,13 @@ body {
 .partners_flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 .partners_item {
     max-width: 170px;
     max-height: 51px;
     margin-right: 40px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
  
 .partners_item:nth-child(5n) {
@@ -541,18 +562,17 @@ body {
 .reviews__h2 {
     text-align: center;
     margin-bottom: 60px;
+    
 }
 
 .reviews_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     gap: 30px;
 }
 
-.reviews_item {}
-
 .quote{
+    margin-bottom: -40px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
@@ -564,7 +584,8 @@ body {
 
 .reviews_item_greybox {
     padding: 0 30px 38px;
-    max-width: 350px;    
+    max-width: 350px;
+    min-height: 318px;
     background-color: #F7F7F7;
     margin-bottom: 30px;
 }
@@ -581,4 +602,99 @@ body {
     color: var(--accent-color); 
 }
 
+@media screen and (max-width: 1280px) {
+    .reviews_grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    .reviews_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contacts__h2 {
+    padding-top: 100px;
+    text-align: center;
+}
+.contacts_flex {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.contacts_item {
+    max-width: 255px;
+}
+
+.contacts_icons {
+    margin: 0 auto;
+}
+
+.contacts-h3 {
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gray-color)
+}
+
+.contacts-h3_info {
+    padding-top: 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacts_email {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 1280px) {
+    .contacts_flex {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .contacts_item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts_flex {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .contacts_item {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    padding: 30px 0;
+    background-color: var(--dark-color);
+    color: var(--white-color)
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    flex-direction: column; 
+}
