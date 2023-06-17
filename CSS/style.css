@@ -611,17 +611,22 @@ body {
     margin: 0 auto;
 }
 
-.contacts-h3 {
+.contacts__h3 {
     padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
     color: var(--gray-color)
 }
 
-.contacts-h3_info {
+.contacts__h3_info {
     padding-top: 23px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.contacts__h3_info a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .contacts_email {
