@@ -609,6 +609,8 @@ body {
 
 .contacts_icons {
     margin: 0 auto;
+    max-width: 49px;
+    max-height: 49px;
 }
 
 .contacts__h3 {
