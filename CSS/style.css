@@ -1,6 +1,5 @@
 html {
-    box-sizing: border-box; 
-}
+    box-sizing: border-box;
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -17,8 +16,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-    margin: 0;   /* убираем предустановленный padding 8px */
-    font-family: 'Oswald', sans-serif;  /* шрифт без засечек */
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
 
@@ -27,7 +26,7 @@ body {
     margin: 0 auto;
 }
 
-:root {                       /* Переменная. Если нужно будет изменить какой-то из этих цветов на всем сайте */
+:root {                       
     --accent-color: #F7654A;
     --dark-color: #404149;
     --gray-color: #999999;
@@ -35,20 +34,20 @@ body {
     --background-color: #E5E5E5;}
 
 
-.text-h2 {   /* Стиль для текста типа "Наши самые большие проекты" */
+.text-h2 {
     font-family: 'Oswald', sans-serif;  
     font-weight: 500;
     font-style: 36px;
     text-transform: uppercase;
 }
 
-.text-h3 {   /* Стиль для текста типа "Наши самые большие проекты" */
+.text-h3 {   
     font-family: 'Oswald', sans-serif;  
     font-weight: 500;
     font-style: 24px;
 }
 
-.text-h4 {   /* Стиль для текста типа "Наши самые большие проекты" */
+.text-h4 {   
     font-family: 'Oswald', sans-serif;  
     font-weight: 500;
     font-style: 21px;
@@ -158,7 +157,7 @@ body {
 .about__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;   /* расстояние между "столбцами" */
+    gap: 30px;   
     justify-items: center;
 }
 
@@ -236,8 +235,7 @@ body {
 .request__flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;  /* выравнивание по вертикали по центру */
-}
+    align-items: center;  
 .request__flex-left {
     color: var(--white-color);
 }
@@ -302,10 +300,10 @@ body {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* СТОЛБЦЫ: 3 - 3 столбца 1fr - значит одинаковая ширина, одна фракция */
-    grid-template-rows: repeat(2, 1fr);  /* СТРОКИ: 2 - 2 строки 1fr - значит одинаковая высота, одна фракция */
-    gap: 30px; /* gap: 30px 60px; задаем отступы между строками(30px) и столбцами(60px)  */
-    justify-items: center;  /* выравниваем содержимое ячеек по центру */
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 30px; 
+    justify-items: center; 
 }
 
 .services__grid-item {
@@ -321,10 +319,10 @@ body {
 
 .portfolio {
 }
-.portfolio__grid {  /* блок занимает по умолчанию всю ширину экрана */
+.portfolio__grid {  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); /* эту строку можно убрать. По умолчанию следующие строки будут располагаться под первой */
+    grid-template-rows: repeat(2, 1fr); 
     justify-items: center;
     gap: 0px;
 }
@@ -341,7 +339,7 @@ body {
     text-align: center;
 }
 
-.question .question__h2 {  /* ПРОБЕЛ указывает что тут параметры для section__h2 которая в разделе question */
+.question .question__h2 {  
     margin-bottom: 50px;
 }
 
@@ -378,17 +376,16 @@ body {
 .partners_flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* лого партнеров перенесутся на новую строку если их больше 5 */
+    flex-wrap: wrap; 
 }
 .partners_item {
     max-width: 170px;
     max-height: 51px;
     margin-right: 40px;
-    margin-bottom: 20px; /* если снизу будет второй ряд */
+    margin-bottom: 20px; 
 }
  
 .partners_item:nth-child(5n) {
-    /*.partners_item:nth-child(5n) = для каждого 5го элемента */
     margin-right: 0;
 }
 
@@ -436,7 +433,7 @@ body {
 .reviews__h4 {}
 
 .reviews__h4_orange {
-    color: var(--accent-color); // New comment
+    color: var(--accent-color);
 }
 
 .contacts__h2 {
@@ -475,7 +472,7 @@ body {
 
 .contacts__h3_info a {
     text-decoration: none;
-    color: inherit;            // установить цвет родительского элемента
+    color: inherit;
 }
 
 .contacts_email {
@@ -519,8 +516,8 @@ body {
     } 
 
     .services__grid {
-        grid-template-columns: repeat(2, 1fr);  /* СТОЛБЦЫ: 2 - 2 столбца 1fr - значит одинаковая ширина, одна фракция */
-        grid-template-rows: repeat(3, 1fr);  /* СТРОКИ: 3 - 3 строки 1fr - значит одинаковая высота, одна фракция */
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .services__grid-item {
@@ -545,7 +542,6 @@ body {
     }
 
     .partners_item:nth-child(5n) {
-        /*.partners_item:nth-child(5n) = для каждого 5го элемента */
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -593,7 +589,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    flex-direction: column; // выстраивает столбцы один под другим
+    flex-direction: column;   /* ????                 ????                  ????                     ????  */
 
     .info {
         position: relative;
@@ -611,7 +607,7 @@ body {
     }
 
     .about__flex {
-        flex-direction: column; /* чтобы столбцы шли вертикально, а не горизонтально */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -625,18 +621,19 @@ body {
     }
 
     .request__flex {
-        flex-wrap: wrap; /* кнопка перерпыгивает на след строку */
+        flex-wrap: wrap; 
     }
 
     .request__h4 {
         text-align: left;
     }
+
     .request__h5 {
         text-align: left;
     }
 
     .services__grid {
-        grid-template-columns: repeat(1, 1fr);  /* СТОЛБЦЫ: 1 - 1 столбец 1fr - значит одинаковая ширина, одна фракция */
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .portfolio__grid {  
@@ -679,7 +676,6 @@ ul:not(.browser-default) > li {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 } 
-
 
 .material-icons {
     text-rendering: optimizeLegibility;
@@ -964,10 +960,3 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     z-index: 997;
     display: none;
   }
-
-
-
-
-
-
-
