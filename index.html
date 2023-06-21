@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Figma_site</title>
 </head>
+
+
 <body>
-        <!-- Menu -->
+    <!-- Menu -->
     <ul id="slide-out" class="sidenav">
         <li><a href="#!"><i class="material-icons">home</i>Main page</a></li>
         <li><a href="#!"><i class="material-icons">people</i>About us</a></li>
@@ -23,18 +25,21 @@
         <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Close</a></li>
     </ul>
 
-    
+
+
+
+
 
     <header class="header">
 
         <div class="container">
             <div class="header__title">
                 <img src="IMG/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
         </div>
 
@@ -130,9 +135,9 @@
 
         </div>
     </section>
-    
-    
-     <section class="services">
+
+
+    <section class="services">
         <div class="container">
 
             <h2 class="text-h2 services__h2">what we do</h2>
@@ -207,18 +212,9 @@
 
     <section class="question">
         <div class="container">
-            <h2 class="text-h2 question__h2">answers on questions</h2>  
+            <h2 class="text-h2 question__h2">answers on questions</h2>
+
             <div class="question_items">
-                
-                <details class="question_item">
-                    <summary class="text-h3 question_h3">compliance with the law</summary>
-                    <p class="text-p question_p">
-                        Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been 
-                        the standard "fish" for Latin texts since the early 16th century. At the time, 
-                        an unnamed printer created a large collection of font sizes and shapes, 
-                        using Lorem Ipsum to print samples.
-                    </p>
-                </details>
 
                 <details class="question_item">
                     <summary class="text-h3 question_h3">compliance with the law</summary>
@@ -248,7 +244,17 @@
                         an unnamed printer created a large collection of font sizes and shapes, 
                         using Lorem Ipsum to print samples.
                     </p>
-                </details>                
+                </details>
+
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">compliance with the law</summary>
+                    <p class="text-p question_p">
+                        Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been 
+                        the standard "fish" for Latin texts since the early 16th century. At the time, 
+                        an unnamed printer created a large collection of font sizes and shapes, 
+                        using Lorem Ipsum to print samples.
+                    </p>
+                </details>
                 
             </div>
 
@@ -324,13 +330,15 @@
                         </p>
                     </div>                    
                     <h4 class="text-h4 reviews__h4"> Leo Quinn, <span class="reviews__h4_orange"> "Balfour Beatty" Spain <span> <h4>
-                </div>                
+                </div>
+
             </div>
+
         </div>
     </section>
 
 
-        <section class="request">
+    <section class="request">
         <div class="container">
             <div class="request__flex">
 
@@ -383,7 +391,7 @@
 
                 <div class="contacts_item">
                     <img class="contacts_icons" src="IMG/icon_envelope.svg" alt="icon envelope">
-                    <h3 class="text-h3 contacts__h3">E-mail</h3>
+                    <h3 class="text-h3 contacts__h3">E-mail:</h3>
                     <h3 class="text-h3 contacts__h3_info">
                         <a href="mailto:help@balfour.com"><span class="contacts_email">help@balfour.com</span></a>
                     </h3>
@@ -393,6 +401,7 @@
 
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -404,11 +413,9 @@
         </div>
     </footer>
 
-                        
-                    
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
