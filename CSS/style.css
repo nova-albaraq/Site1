@@ -1,14 +1,14 @@
 html {
-    box-sizing: border-box; /* всегда ставим по умолчанию для базовых элементов */
+    box-sizing: border-box; 
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; /* всегда ставим по умолчанию для базовых элементов */
+    box-sizing: inherit;
 }
 
 img {
     display: block;
-    max-width: 100%;   /* If screen will be smaller than size of pic, the pic will shrink */
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
