@@ -589,7 +589,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    flex-direction: column;   /* ????                 ????                  ????                     ????  */
+    flex-direction: column;
 
     .info {
         position: relative;
