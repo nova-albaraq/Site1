@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+}
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -26,7 +27,7 @@ body {
     margin: 0 auto;
 }
 
-:root {                       
+:root {
     --accent-color: #F7654A;
     --dark-color: #404149;
     --gray-color: #999999;
@@ -34,7 +35,7 @@ body {
     --background-color: #E5E5E5;}
 
 
-.text-h2 {
+.text-h2 {   
     font-family: 'Oswald', sans-serif;  
     font-weight: 500;
     font-style: 36px;
@@ -157,7 +158,7 @@ body {
 .about__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;   
+    gap: 30px;
     justify-items: center;
 }
 
@@ -235,7 +236,8 @@ body {
 .request__flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
+}
 .request__flex-left {
     color: var(--white-color);
 }
@@ -300,10 +302,10 @@ body {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);  
-    gap: 30px; 
-    justify-items: center; 
+    gap: 30px;
+    justify-items: center;
 }
 
 .services__grid-item {
@@ -319,10 +321,10 @@ body {
 
 .portfolio {
 }
-.portfolio__grid {  
+.portfolio__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     gap: 0px;
 }
@@ -339,7 +341,7 @@ body {
     text-align: center;
 }
 
-.question .question__h2 {  
+.question .question__h2 {
     margin-bottom: 50px;
 }
 
@@ -378,11 +380,12 @@ body {
     justify-content: space-between;
     flex-wrap: wrap; 
 }
+
 .partners_item {
     max-width: 170px;
     max-height: 51px;
     margin-right: 40px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
  
 .partners_item:nth-child(5n) {
@@ -433,7 +436,7 @@ body {
 .reviews__h4 {}
 
 .reviews__h4_orange {
-    color: var(--accent-color);
+    color: var(--accent-color); // New comment
 }
 
 .contacts__h2 {
@@ -517,7 +520,7 @@ body {
 
     .services__grid {
         grid-template-columns: repeat(2, 1fr);  
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);      
     }
 
     .services__grid-item {
@@ -589,7 +592,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    flex-direction: column;   /* ????                 ????                  ????                     ????  */
+    flex-direction: column;
 
     .info {
         position: relative;
@@ -627,13 +630,12 @@ body {
     .request__h4 {
         text-align: left;
     }
-
     .request__h5 {
         text-align: left;
     }
 
     .services__grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);  
     }
 
     .portfolio__grid {  
@@ -676,6 +678,7 @@ ul:not(.browser-default) > li {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 } 
+
 
 .material-icons {
     text-rendering: optimizeLegibility;
